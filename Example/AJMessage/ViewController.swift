@@ -17,9 +17,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showMessage(_ sender: Any) {
-        AJMessage.show(title: "qweqweqwe qewq eqwe q", message: "asdasd adsasd adsasd asdasdasd asdasd asdasd asdasdasd",position:.top).onHide {
-            print("did dissmiss")
-        }
+        AJMessage.show(title: "qweqweqwe qewq eqwe q", message: "asdasd adsasd adsasd asdasdasd asdasd asdasd asdasdasd",position:.top)
     }
     
     override func didReceiveMemoryWarning() {

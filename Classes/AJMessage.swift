@@ -216,8 +216,17 @@ public class AJMessage: UIView {
         action = sender
     }
     
-    /** show AJMessage Nb:duration = 0 to infinite, default is 3 */
-    public static func show(title : String,message : String,duration: Double? = 3.0 , position: Position = .top,status : Status = .success ,config:AJMessageConfig = AJMessageConfig.shared) -> AJMessage {
+    /// show AJMessage Nb:duration = nil to infinite, default is 3
+    ///
+    /// - Parameters:
+    ///   - title: String of title
+    ///   - message: String of message
+    ///   - duration: Optional duration, default value is 3.0
+    ///   - position: Optional Position, default value is .top
+    ///   - status: Optional status, default value is .success
+    ///   - config: Optional config, default is using AJMessageConfig.shared
+    /// - Returns: AJMessage for chaining function like onhide
+    @discardableResult public static func show(title : String,message : String,duration: Double? = 3.0 , position: Position = .top,status : Status = .success ,config:AJMessageConfig = AJMessageConfig.shared) -> AJMessage {
         let msg = AJMessage(title: title, message: message, duration: duration, position: position, status: status, config:config)
         return msg
     }
