@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AJMessage'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of AJMessage.'
+  s.summary          = 'Simple Message'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,10 +28,10 @@ Pod::Spec.new do |s|
   s.swift_version    = '4.2'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AJMessage/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   
    s.resource_bundles = {
-     'AJMessage' => ['AJMessage/Assets/*.png']
+     'AJMessage' => ['Assets/*.png']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
