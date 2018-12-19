@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14637FA781DBA7E5E3297F4CA622F1D4 /* AJMessage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB1617FD91BBD7B8FFABBB126373172E /* AJMessage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BBCF9347A7C34126EABA3EDDAA9017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		23A4727F9A06CBD33DDF7705DC9F6A6D /* Pods-AJMessage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA7C4181C057387412C31DD3523097B /* Pods-AJMessage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24266F277CB1B541D8DA6E8EF502A658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		518999B742F68D439F88C2914FCA6681 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5FBBBB2CAD69F6A2C9BCA084E3D01DE7 /* Pods-AJMessage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10EA744EA95D57A80C053FAEE4B12210 /* Pods-AJMessage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7311FE1BA10B851147C4721550BD5104 /* AJMessage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BB8677AF38B08A7D986A256842725D /* AJMessage-dummy.m */; };
+		89CC627E21CA003A0061DE65 /* AJMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC627D21CA00390061DE65 /* AJMessages.swift */; };
+		89CC628121CA00420061DE65 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC627F21CA00420061DE65 /* Helper.swift */; };
+		89CC628221CA00420061DE65 /* AJMessagesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC628021CA00420061DE65 /* AJMessagesConfig.swift */; };
+		89CC628921CA02430061DE65 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC628621CA02430061DE65 /* info@3x.png */; };
+		89CC628A21CA02430061DE65 /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC628721CA02430061DE65 /* error@3x.png */; };
+		89CC628B21CA02430061DE65 /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC628821CA02430061DE65 /* success@3x.png */; };
+		C5E6B8ADCE6B04AA7C937C1B19DCB2A9 /* Pods-AJMessage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C27FCB2929BA5D9F3DE578673D75B0D /* Pods-AJMessage_Example-dummy.m */; };
+		E6B32891682AB1BF9DA57A43EC47ACE3 /* Pods-AJMessage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D652943FE3CB456977907A151CA4AFC9 /* Pods-AJMessage_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C2482FB3117C33C55FFD72639D6DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 215986BD940EBE714B28FB5E6870DE04;
+			remoteInfo = AJMessage;
+		};
+		917405F32FD261180E0782111B7E5E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC22D9C138318BBEA558C8F234EC1871;
+			remoteInfo = "Pods-AJMessage_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C004D56F16A4E21B2F6617F2CF6B4B /* Pods-AJMessage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AJMessage_Tests.modulemap"; sourceTree = "<group>"; };
+		0CE457E9ADF79BF1522F31680275A113 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		10EA744EA95D57A80C053FAEE4B12210 /* Pods-AJMessage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AJMessage_Example-umbrella.h"; sourceTree = "<group>"; };
+		1197D08A5CA3170B022C6EA9824B2D19 /* Pods-AJMessage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AJMessage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BD61D4C3CEF39506AA4E70336144F6E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		28D1273D7F63867EBCD3E537CBC9132B /* Pods-AJMessage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AJMessage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CCBBF75CD2E520C6B0AE30F47AE2ACE /* Pods-AJMessage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AJMessage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		47892F9D22322257B05D5383833A6F1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C27FCB2929BA5D9F3DE578673D75B0D /* Pods-AJMessage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AJMessage_Example-dummy.m"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		64647911C0DA797CF84538CC02A880A8 /* Pods-AJMessage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AJMessage_Example-resources.sh"; sourceTree = "<group>"; };
+		70B6C3154526A5B8DFBDA53ACFEECCD5 /* Pods-AJMessage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AJMessage_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		73CFF2B69965E0F6443282C4DF0D9FD2 /* AJMessage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJMessage-prefix.pch"; sourceTree = "<group>"; };
+		783AEFB2E731BA08981794EB7DCC9383 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CFA5B68895A5D4ECFBE88C1F6796B4C /* Pods-AJMessage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AJMessage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8528263E2015689930FC85CCE1C893E7 /* AJMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AJMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8979066A8B9CA1CB9A025A34D8511724 /* Pods-AJMessage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AJMessage_Example.modulemap"; sourceTree = "<group>"; };
+		89CC627D21CA00390061DE65 /* AJMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJMessages.swift; sourceTree = "<group>"; };
+		89CC627F21CA00420061DE65 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		89CC628021CA00420061DE65 /* AJMessagesConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJMessagesConfig.swift; sourceTree = "<group>"; };
+		89CC628621CA02430061DE65 /* info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
+		89CC628721CA02430061DE65 /* error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@3x.png"; sourceTree = "<group>"; };
+		89CC628821CA02430061DE65 /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C5F209B445E018913A0A81F2B25A5C /* Pods-AJMessage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AJMessage_Example-frameworks.sh"; sourceTree = "<group>"; };
+		993CCF534484B215F24A4A395BB6B9A1 /* AJMessage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AJMessage.xcconfig; sourceTree = "<group>"; };
+		99BB8677AF38B08A7D986A256842725D /* AJMessage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AJMessage-dummy.m"; sourceTree = "<group>"; };
+		9AF5B31CC9BF3B4F7B3EB84CF730D2DF /* Pods-AJMessage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AJMessage_Tests-resources.sh"; sourceTree = "<group>"; };
+		AAB542CA6AE953D06DDEBC1530D5ED6A /* AJMessage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AJMessage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB37C8D185123416FC19CDE9B1BA4CD3 /* Pods-AJMessage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AJMessage_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ABA7C4181C057387412C31DD3523097B /* Pods-AJMessage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AJMessage_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B860E0F061D4C2E7D8B7691F5559ED3E /* Pods-AJMessage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AJMessage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C2BA92AA10FDF7B77A905944C0CE9C13 /* AJMessage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AJMessage.modulemap; sourceTree = "<group>"; };
+		C4B4B2B9F90C5210A017BDF11D2A9ABA /* Pods-AJMessage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AJMessage_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CD400FE9B5988F8560B4505CA2FD8BC8 /* Pods_AJMessage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AJMessage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F4100CA3928F87BAB40F0CBF89C448 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D652943FE3CB456977907A151CA4AFC9 /* Pods-AJMessage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AJMessage_Tests-dummy.m"; sourceTree = "<group>"; };
+		DB1617FD91BBD7B8FFABBB126373172E /* AJMessage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJMessage-umbrella.h"; sourceTree = "<group>"; };
+		DC29E26C21F43C19942018E0AE3CFC5B /* Pods_AJMessage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AJMessage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6E22EE9B6378C806D8B9E2BDE7829C /* Pods-AJMessage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AJMessage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AC17A87606EE648FCCB1436FA8CB21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BBCF9347A7C34126EABA3EDDAA9017 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEFD859BF76BED9812208D9F04D0999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24266F277CB1B541D8DA6E8EF502A658 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C4F9A2EC99FCF911805E049F61E6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518999B742F68D439F88C2914FCA6681 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B19CB8B6769486648EA8761E9E14D88 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF711F3F0BFE1CA8BEF4BAF4AD9103CC /* Pods-AJMessage_Example */,
+				FF40B250E3ACE8BE995CDE8F093FEBFF /* Pods-AJMessage_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1CBAB56654F9371B87B02A18B43FFB06 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E492E30713B5D2DEAD09C4A1066A810 /* AJMessage */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E492E30713B5D2DEAD09C4A1066A810 /* AJMessage */ = {
+			isa = PBXGroup;
+			children = (
+				89CC628321CA022F0061DE65 /* Assets */,
+				89CC627521C9FFEE0061DE65 /* Classes */,
+				CB3E01E61F4BF696C9DEC8369E4E29FC /* Pod */,
+				7B752F2CD6BD72554B83280E3CA07829 /* Support Files */,
+			);
+			name = AJMessage;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7B752F2CD6BD72554B83280E3CA07829 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2BA92AA10FDF7B77A905944C0CE9C13 /* AJMessage.modulemap */,
+				993CCF534484B215F24A4A395BB6B9A1 /* AJMessage.xcconfig */,
+				99BB8677AF38B08A7D986A256842725D /* AJMessage-dummy.m */,
+				73CFF2B69965E0F6443282C4DF0D9FD2 /* AJMessage-prefix.pch */,
+				DB1617FD91BBD7B8FFABBB126373172E /* AJMessage-umbrella.h */,
+				D3F4100CA3928F87BAB40F0CBF89C448 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AJMessage";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				1CBAB56654F9371B87B02A18B43FFB06 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				969E60E48B6374F4BB90C0C95D13173D /* Products */,
+				0B19CB8B6769486648EA8761E9E14D88 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89CC627521C9FFEE0061DE65 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				89CC628021CA00420061DE65 /* AJMessagesConfig.swift */,
+				89CC627F21CA00420061DE65 /* Helper.swift */,
+				89CC627D21CA00390061DE65 /* AJMessages.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		89CC628321CA022F0061DE65 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				89CC628721CA02430061DE65 /* error@3x.png */,
+				89CC628621CA02430061DE65 /* info@3x.png */,
+				89CC628821CA02430061DE65 /* success@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		969E60E48B6374F4BB90C0C95D13173D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8528263E2015689930FC85CCE1C893E7 /* AJMessage.framework */,
+				DC29E26C21F43C19942018E0AE3CFC5B /* Pods_AJMessage_Example.framework */,
+				CD400FE9B5988F8560B4505CA2FD8BC8 /* Pods_AJMessage_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB3E01E61F4BF696C9DEC8369E4E29FC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AAB542CA6AE953D06DDEBC1530D5ED6A /* AJMessage.podspec */,
+				1BD61D4C3CEF39506AA4E70336144F6E /* LICENSE */,
+				0CE457E9ADF79BF1522F31680275A113 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DF711F3F0BFE1CA8BEF4BAF4AD9103CC /* Pods-AJMessage_Example */ = {
+			isa = PBXGroup;
+			children = (
+				783AEFB2E731BA08981794EB7DCC9383 /* Info.plist */,
+				8979066A8B9CA1CB9A025A34D8511724 /* Pods-AJMessage_Example.modulemap */,
+				B860E0F061D4C2E7D8B7691F5559ED3E /* Pods-AJMessage_Example-acknowledgements.markdown */,
+				1197D08A5CA3170B022C6EA9824B2D19 /* Pods-AJMessage_Example-acknowledgements.plist */,
+				4C27FCB2929BA5D9F3DE578673D75B0D /* Pods-AJMessage_Example-dummy.m */,
+				94C5F209B445E018913A0A81F2B25A5C /* Pods-AJMessage_Example-frameworks.sh */,
+				64647911C0DA797CF84538CC02A880A8 /* Pods-AJMessage_Example-resources.sh */,
+				10EA744EA95D57A80C053FAEE4B12210 /* Pods-AJMessage_Example-umbrella.h */,
+				3CCBBF75CD2E520C6B0AE30F47AE2ACE /* Pods-AJMessage_Example.debug.xcconfig */,
+				C4B4B2B9F90C5210A017BDF11D2A9ABA /* Pods-AJMessage_Example.release.xcconfig */,
+			);
+			name = "Pods-AJMessage_Example";
+			path = "Target Support Files/Pods-AJMessage_Example";
+			sourceTree = "<group>";
+		};
+		FF40B250E3ACE8BE995CDE8F093FEBFF /* Pods-AJMessage_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				47892F9D22322257B05D5383833A6F1F /* Info.plist */,
+				02C004D56F16A4E21B2F6617F2CF6B4B /* Pods-AJMessage_Tests.modulemap */,
+				7CFA5B68895A5D4ECFBE88C1F6796B4C /* Pods-AJMessage_Tests-acknowledgements.markdown */,
+				28D1273D7F63867EBCD3E537CBC9132B /* Pods-AJMessage_Tests-acknowledgements.plist */,
+				D652943FE3CB456977907A151CA4AFC9 /* Pods-AJMessage_Tests-dummy.m */,
+				70B6C3154526A5B8DFBDA53ACFEECCD5 /* Pods-AJMessage_Tests-frameworks.sh */,
+				9AF5B31CC9BF3B4F7B3EB84CF730D2DF /* Pods-AJMessage_Tests-resources.sh */,
+				ABA7C4181C057387412C31DD3523097B /* Pods-AJMessage_Tests-umbrella.h */,
+				FC6E22EE9B6378C806D8B9E2BDE7829C /* Pods-AJMessage_Tests.debug.xcconfig */,
+				AB37C8D185123416FC19CDE9B1BA4CD3 /* Pods-AJMessage_Tests.release.xcconfig */,
+			);
+			name = "Pods-AJMessage_Tests";
+			path = "Target Support Files/Pods-AJMessage_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0937140AFF3482C499BCA7403834EF85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBBBB2CAD69F6A2C9BCA084E3D01DE7 /* Pods-AJMessage_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1645601CC73CA5F7119EB720F3C8D93B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14637FA781DBA7E5E3297F4CA622F1D4 /* AJMessage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0D7ECC6D647053BB3063D540AE9577D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4727F9A06CBD33DDF7705DC9F6A6D /* Pods-AJMessage_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		215986BD940EBE714B28FB5E6870DE04 /* AJMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67E2CAC75476CC09C7535E7BB58BF3C /* Build configuration list for PBXNativeTarget "AJMessage" */;
+			buildPhases = (
+				1645601CC73CA5F7119EB720F3C8D93B /* Headers */,
+				E88FB9412254F093D6537ADB99BEDAB7 /* Sources */,
+				1AC17A87606EE648FCCB1436FA8CB21F /* Frameworks */,
+				2278D81CC9616B917E7D10C16F022FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AJMessage;
+			productName = AJMessage;
+			productReference = 8528263E2015689930FC85CCE1C893E7 /* AJMessage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72BED25F3C34A67245D94D1E76FCA5AC /* Pods-AJMessage_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7484102C56D195B5D56EEB707EDE9637 /* Build configuration list for PBXNativeTarget "Pods-AJMessage_Tests" */;
+			buildPhases = (
+				C0D7ECC6D647053BB3063D540AE9577D /* Headers */,
+				76C114EA04414BD35DBCA09032A6DE5D /* Sources */,
+				D5C4F9A2EC99FCF911805E049F61E6BA /* Frameworks */,
+				1BD9A64DD5EA6C58599B311D8D26C138 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582C7FE91B9DEE8E3DB4E1E5549C4360 /* PBXTargetDependency */,
+			);
+			name = "Pods-AJMessage_Tests";
+			productName = "Pods-AJMessage_Tests";
+			productReference = CD400FE9B5988F8560B4505CA2FD8BC8 /* Pods_AJMessage_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC22D9C138318BBEA558C8F234EC1871 /* Pods-AJMessage_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A83147422BED6B278838BF7F2676885 /* Build configuration list for PBXNativeTarget "Pods-AJMessage_Example" */;
+			buildPhases = (
+				0937140AFF3482C499BCA7403834EF85 /* Headers */,
+				B77EBF3C0A50A94576A5DEB6A279C164 /* Sources */,
+				8EEFD859BF76BED9812208D9F04D0999 /* Frameworks */,
+				8C846547D4E3FD5DC6C83293B9BF0F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEA59FADE00E609A264D0B0E8E1FC36 /* PBXTargetDependency */,
+			);
+			name = "Pods-AJMessage_Example";
+			productName = "Pods-AJMessage_Example";
+			productReference = DC29E26C21F43C19942018E0AE3CFC5B /* Pods_AJMessage_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					215986BD940EBE714B28FB5E6870DE04 = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 969E60E48B6374F4BB90C0C95D13173D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				215986BD940EBE714B28FB5E6870DE04 /* AJMessage */,
+				EC22D9C138318BBEA558C8F234EC1871 /* Pods-AJMessage_Example */,
+				72BED25F3C34A67245D94D1E76FCA5AC /* Pods-AJMessage_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BD9A64DD5EA6C58599B311D8D26C138 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2278D81CC9616B917E7D10C16F022FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CC628B21CA02430061DE65 /* success@3x.png in Resources */,
+				89CC628A21CA02430061DE65 /* error@3x.png in Resources */,
+				89CC628921CA02430061DE65 /* info@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C846547D4E3FD5DC6C83293B9BF0F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76C114EA04414BD35DBCA09032A6DE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B32891682AB1BF9DA57A43EC47ACE3 /* Pods-AJMessage_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77EBF3C0A50A94576A5DEB6A279C164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E6B8ADCE6B04AA7C937C1B19DCB2A9 /* Pods-AJMessage_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88FB9412254F093D6537ADB99BEDAB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CC627E21CA003A0061DE65 /* AJMessages.swift in Sources */,
+				7311FE1BA10B851147C4721550BD5104 /* AJMessage-dummy.m in Sources */,
+				89CC628221CA00420061DE65 /* AJMessagesConfig.swift in Sources */,
+				89CC628121CA00420061DE65 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FEA59FADE00E609A264D0B0E8E1FC36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AJMessage;
+			target = 215986BD940EBE714B28FB5E6870DE04 /* AJMessage */;
+			targetProxy = 5C2482FB3117C33C55FFD72639D6DB6A /* PBXContainerItemProxy */;
+		};
+		582C7FE91B9DEE8E3DB4E1E5549C4360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AJMessage_Example";
+			target = EC22D9C138318BBEA558C8F234EC1871 /* Pods-AJMessage_Example */;
+			targetProxy = 917405F32FD261180E0782111B7E5E39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4652508B2B2A6C45564B43CF55C4C5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 993CCF534484B215F24A4A395BB6B9A1 /* AJMessage.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AJMessage/AJMessage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AJMessage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AJMessage/AJMessage.modulemap";
+				PRODUCT_MODULE_NAME = AJMessage;
+				PRODUCT_NAME = AJMessage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50FF285C7DBC1592EA6AC705BB05656D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B4B2B9F90C5210A017BDF11D2A9ABA /* Pods-AJMessage_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AJMessage_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AJMessage_Example/Pods-AJMessage_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7DA425F705DAD58F2ECD97EEACE5ECDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCBBF75CD2E520C6B0AE30F47AE2ACE /* Pods-AJMessage_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AJMessage_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AJMessage_Example/Pods-AJMessage_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87C18A1EF7A7EF3F9DE4F861B7FA8A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB37C8D185123416FC19CDE9B1BA4CD3 /* Pods-AJMessage_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AJMessage_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AJMessage_Tests/Pods-AJMessage_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98DA7A8A0962ADC0BADDA7A13F890A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6E22EE9B6378C806D8B9E2BDE7829C /* Pods-AJMessage_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AJMessage_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AJMessage_Tests/Pods-AJMessage_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B543444E98E33A6D931A44DC5B8DEF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 993CCF534484B215F24A4A395BB6B9A1 /* AJMessage.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AJMessage/AJMessage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AJMessage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AJMessage/AJMessage.modulemap";
+				PRODUCT_MODULE_NAME = AJMessage;
+				PRODUCT_NAME = AJMessage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
+				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7484102C56D195B5D56EEB707EDE9637 /* Build configuration list for PBXNativeTarget "Pods-AJMessage_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DA7A8A0962ADC0BADDA7A13F890A3D /* Debug */,
+				87C18A1EF7A7EF3F9DE4F861B7FA8A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A83147422BED6B278838BF7F2676885 /* Build configuration list for PBXNativeTarget "Pods-AJMessage_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DA425F705DAD58F2ECD97EEACE5ECDC /* Debug */,
+				50FF285C7DBC1592EA6AC705BB05656D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67E2CAC75476CC09C7535E7BB58BF3C /* Build configuration list for PBXNativeTarget "AJMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4652508B2B2A6C45564B43CF55C4C5A7 /* Debug */,
+				B543444E98E33A6D931A44DC5B8DEF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

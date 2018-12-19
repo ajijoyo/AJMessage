@@ -1,0 +1,16 @@
+PODS:
+  - AJMessage (0.1.0)
+
+DEPENDENCIES:
+  - AJMessage (from `../`)
+
+EXTERNAL SOURCES:
+  AJMessage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AJMessage: 931bb3c3db3e067aceece182b56b32288c49df21
+
+PODFILE CHECKSUM: 7efba3034b3e1807280b7e492186a8ab5a719555
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,22 @@
+{
+  "name": "AJMessage",
+  "version": "0.1.0",
+  "summary": "A short description of AJMessage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ajijoyo/AJMessage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ajijoyo": "self.ajiejoy@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ajijoyo/AJMessage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AJMessage/Classes/**/*"
+}
