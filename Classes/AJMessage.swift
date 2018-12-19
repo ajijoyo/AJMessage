@@ -82,9 +82,9 @@ public class AJMessage: UIView {
         
         iconView = UIImageView()
         iconView.contentMode = .scaleAspectFit
-        iconView.frame = CGRect(x: 8, y: 8, width: 30, height: 30)
+        iconView.frame = CGRect(x: 8, y: 20, width: 30, height: 30)
         
-        title.frame = CGRect(x: 46, y: 4, width: mainView.bounds.width - 16 , height: 1)
+        title.frame = CGRect(x: 46, y: 16, width: mainView.bounds.width - 16 , height: 1)
         title.numberOfLines = 0
         title.font = config.titleFont
         title.textColor = config.titleColor
@@ -99,19 +99,20 @@ public class AJMessage: UIView {
         mainView.addSubview(message)
         mainView.addSubview(title)
         
-        
         let bundle = Bundle(for: type(of: self))
+        let url = bundle.resourceURL!.appendingPathComponent("AJMessage.bundle")
+        let resourceBundle = Bundle(url: url)
+        
         switch status {
         case .info:
-            mainShape.fillColor = UIColor(red: CGFloat(231.0/255.0), green: CGFloat(76.0/255.0), blue: CGFloat(60.0/255.0), alpha: 1).cgColor
-            iconView.image = UIImage(named: "info", in: bundle, compatibleWith: nil)
-        case .error:
-            
             mainShape.fillColor = UIColor(red: CGFloat(241.0/255.0), green: CGFloat(196.0/255.0), blue: CGFloat(15.0/255.0), alpha: 1).cgColor
-            iconView.image = UIImage(named: "error", in: bundle, compatibleWith: nil)
+            iconView.image = UIImage(named: "info", in: resourceBundle, compatibleWith: nil)
+        case .error:
+            mainShape.fillColor = UIColor(red: CGFloat(231.0/255.0), green: CGFloat(76.0/255.0), blue: CGFloat(60.0/255.0), alpha: 1).cgColor
+            iconView.image = UIImage(named: "error", in: resourceBundle, compatibleWith: nil)
         case .success:
             mainShape.fillColor = UIColor(red: CGFloat(46.0/255.0), green: CGFloat(204.0/255.0), blue: CGFloat(113.0/255.0), alpha: 1).cgColor
-            iconView.image = UIImage(named: "success", in: bundle, compatibleWith: nil)
+            iconView.image = UIImage(named: "success", in: resourceBundle, compatibleWith: nil)
         }
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.hideMessages))
@@ -159,9 +160,9 @@ public class AJMessage: UIView {
         let sizeT = title.sizeThatFits(CGSize(width: mainView.bounds.width - 46, height: CGFloat.greatestFiniteMagnitude))
         title.frame.size.height = sizeT.height
         let sizeM = message.sizeThatFits(CGSize(width: mainView.bounds.width - 46, height: CGFloat.greatestFiniteMagnitude))
-        message.frame.origin.y = title.frame.origin.y + title.bounds.height + 2
+        message.frame.origin.y = title.frame.maxY + 4
         message.frame.size.height = sizeM.height
-        self.frame.size.height = message.frame.origin.y + message.bounds.height + 8
+        self.frame.size.height = message.frame.maxY + 16
         
         if position == .bottom {
             var saveBottom : CGFloat = 16
