@@ -14,9 +14,9 @@
 		518999B742F68D439F88C2914FCA6681 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		5FBBBB2CAD69F6A2C9BCA084E3D01DE7 /* Pods-AJMessage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10EA744EA95D57A80C053FAEE4B12210 /* Pods-AJMessage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7311FE1BA10B851147C4721550BD5104 /* AJMessage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BB8677AF38B08A7D986A256842725D /* AJMessage-dummy.m */; };
-		89CC627E21CA003A0061DE65 /* AJMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC627D21CA00390061DE65 /* AJMessages.swift */; };
+		89CC627E21CA003A0061DE65 /* AJMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC627D21CA00390061DE65 /* AJMessage.swift */; };
 		89CC628121CA00420061DE65 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC627F21CA00420061DE65 /* Helper.swift */; };
-		89CC628221CA00420061DE65 /* AJMessagesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC628021CA00420061DE65 /* AJMessagesConfig.swift */; };
+		89CC628221CA00420061DE65 /* AJMessageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC628021CA00420061DE65 /* AJMessageConfig.swift */; };
 		89CC628921CA02430061DE65 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC628621CA02430061DE65 /* info@3x.png */; };
 		89CC628A21CA02430061DE65 /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC628721CA02430061DE65 /* error@3x.png */; };
 		89CC628B21CA02430061DE65 /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC628821CA02430061DE65 /* success@3x.png */; };
@@ -59,9 +59,9 @@
 		7CFA5B68895A5D4ECFBE88C1F6796B4C /* Pods-AJMessage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AJMessage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8528263E2015689930FC85CCE1C893E7 /* AJMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AJMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8979066A8B9CA1CB9A025A34D8511724 /* Pods-AJMessage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AJMessage_Example.modulemap"; sourceTree = "<group>"; };
-		89CC627D21CA00390061DE65 /* AJMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJMessages.swift; sourceTree = "<group>"; };
+		89CC627D21CA00390061DE65 /* AJMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJMessage.swift; sourceTree = "<group>"; };
 		89CC627F21CA00420061DE65 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		89CC628021CA00420061DE65 /* AJMessagesConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJMessagesConfig.swift; sourceTree = "<group>"; };
+		89CC628021CA00420061DE65 /* AJMessageConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJMessageConfig.swift; sourceTree = "<group>"; };
 		89CC628621CA02430061DE65 /* info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
 		89CC628721CA02430061DE65 /* error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@3x.png"; sourceTree = "<group>"; };
 		89CC628821CA02430061DE65 /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
@@ -177,9 +177,9 @@
 		89CC627521C9FFEE0061DE65 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				89CC628021CA00420061DE65 /* AJMessagesConfig.swift */,
+				89CC628021CA00420061DE65 /* AJMessageConfig.swift */,
 				89CC627F21CA00420061DE65 /* Helper.swift */,
-				89CC627D21CA00390061DE65 /* AJMessages.swift */,
+				89CC627D21CA00390061DE65 /* AJMessage.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -425,9 +425,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89CC627E21CA003A0061DE65 /* AJMessages.swift in Sources */,
+				89CC627E21CA003A0061DE65 /* AJMessage.swift in Sources */,
 				7311FE1BA10B851147C4721550BD5104 /* AJMessage-dummy.m in Sources */,
-				89CC628221CA00420061DE65 /* AJMessagesConfig.swift in Sources */,
+				89CC628221CA00420061DE65 /* AJMessageConfig.swift in Sources */,
 				89CC628121CA00420061DE65 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 //
-//  AJMessages.swift
-//  AJMessages
+//  AJMessage.swift
+//  AJMessage
 //
 //  Created by ajiejoy on 9/18/16.
 //  Copyright © 2016 ajiejoy. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AJMessages: UIView {
+public class AJMessage: UIView {
 
     
     // Only override drawRect: if you perform custom drawing.
@@ -48,9 +48,9 @@ public class AJMessages: UIView {
     private var iconView : UIImageView!
     private var timer : Timer? = nil
     private(set) var status : Status = .error
-    private(set) var config : AJMessagesConfig!
+    private(set) var config : AJMessageConfig!
     
-    public init(title : String,message : String,duration: Double?, position: Position , status:Status ,config:AJMessagesConfig) {
+    public init(title : String,message : String,duration: Double?, position: Position , status:Status ,config:AJMessageConfig) {
         let width = UIApplication.shared.keyWindow!.bounds.width - 16;
         
         var saveTop : CGFloat = 24
@@ -127,7 +127,7 @@ public class AJMessages: UIView {
         
         //remove all current messages
         for vim in UIApplication.shared.keyWindow!.subviews {
-            if let msg = vim as? AJMessages {
+            if let msg = vim as? AJMessage {
                 msg.hideMessages()
             }
         }
@@ -217,15 +217,15 @@ public class AJMessages: UIView {
     }
     
     /** show AJMessage Nb:duration = 0 to infinite, default is 3 */
-    public static func show(title : String,message : String,duration: Double? = 3.0 , position: Position = .top,status : Status = .success ,config:AJMessagesConfig = AJMessagesConfig.shared) -> AJMessages {
-        let msg = AJMessages(title: title, message: message, duration: duration, position: position, status: status, config:config)
+    public static func show(title : String,message : String,duration: Double? = 3.0 , position: Position = .top,status : Status = .success ,config:AJMessageConfig = AJMessageConfig.shared) -> AJMessage {
+        let msg = AJMessage(title: title, message: message, duration: duration, position: position, status: status, config:config)
         return msg
     }
     
     /** hide all AJMessage class */
     public static func hide(){
         for vim in UIApplication.shared.keyWindow!.subviews {
-            if let msg = vim as? AJMessages {
+            if let msg = vim as? AJMessage {
                 msg.hideMessages()
             }
         }

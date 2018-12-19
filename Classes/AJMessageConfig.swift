@@ -1,5 +1,5 @@
 //
-//  AJMessagesConfig.swift
+//  AJMessageConfig.swift
 //
 //  Created for AJMessages in 2018
 //  Created by Ajiejoy on 19/12/18 with love and sweat
@@ -11,9 +11,9 @@
 
 import UIKit
 
-public struct AJMessagesConfig {
+public struct AJMessageConfig {
     
-    public static var shared = AJMessagesConfig()
+    public static var shared = AJMessageConfig()
     
     public var titleFont : UIFont = UIFont.boldSystemFont(ofSize: 15)
     public var titleColor : UIColor = .white

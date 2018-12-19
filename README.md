@@ -1,5 +1,6 @@
 # AJMessage
 
+[![Language](https://img.shields.io/badge/Swift-4.2-orange.svg)]()
 [![CI Status](https://img.shields.io/travis/ajijoyo/AJMessage.svg?style=flat)](https://travis-ci.org/ajijoyo/AJMessage)
 [![Version](https://img.shields.io/cocoapods/v/AJMessage.svg?style=flat)](https://cocoapods.org/pods/AJMessage)
 [![License](https://img.shields.io/cocoapods/l/AJMessage.svg?style=flat)](https://cocoapods.org/pods/AJMessage)
@@ -11,6 +12,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+```
+XCode 10.1
+Swift 4.2
+```
+
 ## Installation
 
 AJMessage is available through [CocoaPods](https://cocoapods.org). To install
@@ -18,6 +24,36 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'AJMessage'
+```
+## Used
+
+Simple used
+```swift
+AJMessage.show(title: "This is title", message: "message for description",position:.top).onHide {
+print("did dissmiss")
+}
+```
+
+customize config
+
+for spesific view present
+```swift
+let config = AJMessageConfig()
+/**
+config.titleFont 
+*/
+```
+
+for global view present
+```swift
+let config = AJMessageConfig.shared
+/**
+config.titleFont 
+*/
+```
+
+```swift
+AJMessage.show(title: "This is title", message: "message for description", config: config)
 ```
 
 ## Author

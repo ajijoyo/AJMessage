@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showMessage(_ sender: Any) {
-        AJMessages.show(title: "qweqweqwe qewq eqwe q", message: "asdasd adsasd adsasd asdasdasd asdasd asdasd asdasdasd",position:.top).onHide {
+        AJMessage.show(title: "qweqweqwe qewq eqwe q", message: "asdasd adsasd adsasd asdasdasd asdasd asdasd asdasdasd",position:.top).onHide {
             print("did dissmiss")
         }
     }
