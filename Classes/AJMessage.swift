@@ -50,7 +50,7 @@ public class AJMessage: UIView {
     private(set) var status : Status = .error
     private(set) var config : AJMessageConfig!
     
-    public init(title : String,message : String,duration: Double?, position: Position , status:Status ,config:AJMessageConfig) {
+    init(title : String,message : String,duration: Double?, position: Position , status:Status ,config:AJMessageConfig) {
         let width = UIApplication.shared.keyWindow!.bounds.width - 16;
         
         var saveTop : CGFloat = 24
@@ -89,7 +89,7 @@ public class AJMessage: UIView {
         title.font = config.titleFont
         title.textColor = config.titleColor
         
-        message.frame = CGRect(x: title.frame.origin.x, y: title.frame.origin.y + title.bounds.height, width: mainView.bounds.width - 8 , height: 1)
+        message.frame = CGRect(x: title.frame.minX, y: title.frame.maxY, width: mainView.bounds.width - 16 , height: 1)
         message.numberOfLines = 0
         message.font = config.messageFont
         message.textColor = config.messageColor
@@ -157,9 +157,9 @@ public class AJMessage: UIView {
     }
     
     func updateFrame(){
-        let sizeT = title.sizeThatFits(CGSize(width: mainView.bounds.width - 46, height: CGFloat.greatestFiniteMagnitude))
+        let sizeT = title.sizeThatFits(CGSize(width: mainView.bounds.width - 62, height: CGFloat.greatestFiniteMagnitude))
         title.frame.size.height = sizeT.height
-        let sizeM = message.sizeThatFits(CGSize(width: mainView.bounds.width - 46, height: CGFloat.greatestFiniteMagnitude))
+        let sizeM = message.sizeThatFits(CGSize(width: mainView.bounds.width - 62, height: CGFloat.greatestFiniteMagnitude))
         message.frame.origin.y = title.frame.maxY + 4
         message.frame.size.height = sizeM.height
         self.frame.size.height = message.frame.maxY + 16
