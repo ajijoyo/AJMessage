@@ -8,7 +8,7 @@
 
 ## Example
 
-![Alt Text](https://github.com/ajijoyo/AJMessage/Demo/demo.gif)
+![demo](https://github.com/ajijoyo/AJMessage/tree/master/Demo/demo.gif)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
