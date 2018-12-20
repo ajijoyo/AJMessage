@@ -42,18 +42,17 @@ let config = AJMessageConfig()
 /**
 config.titleFont 
 */
+
+AJMessage.show(title: "This is title", message: "message for description", config: config)
 ```
 
 for global view present
+just set `AJMessageConfig.shared` on `didFinishLaunchingWithOptions` 
 ```swift
 let config = AJMessageConfig.shared
 /**
 config.titleFont 
 */
-```
-
-```swift
-AJMessage.show(title: "This is title", message: "message for description", config: config)
 ```
 
 ## Author
