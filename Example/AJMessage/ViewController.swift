@@ -13,11 +13,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     @IBAction func showMessage(_ sender: Any) {
-        AJMessage.show(title: "qweqweqwe qewq eqwe q", message: "asdasd adsasd adsasd asdasdasd asdasd asdasd asdasdasd",position:.top)
+        
+        let title = NSAttributedString(string: "Title", attributes: [.font:UIFont.systemFont(ofSize: 15)])
+        
+        let msg = NSMutableAttributedString(string: "aasdasd", attributes: [.font:UIFont.systemFont(ofSize: 14)])
+        let attach = NSTextAttachment()
+        attach.image = UIImage(named:"plus")
+        msg.append(NSAttributedString(attachment: attach))
+        msg.append(NSAttributedString(string: "asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasd"))
+        
+        AJMessage.show(title: title, message: msg)
     }
     
     override func didReceiveMemoryWarning() {

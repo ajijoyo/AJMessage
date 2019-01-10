@@ -50,18 +50,18 @@ public class AJMessage: UIView {
     private(set) var status : Status = .error
     private(set) var config : AJMessageConfig!
     
-    init(title : String,message : String,duration: Double?, position: Position , status:Status ,config:AJMessageConfig) {
+    init(title : NSAttributedString,message : NSAttributedString,duration: Double?, position: Position , status:Status ,config:AJMessageConfig) {
         let width = UIApplication.shared.keyWindow!.bounds.width - 16;
         
         var saveTop : CGFloat = 24
-        if UIDevice.isIphoneX, #available(iOS 11.0, *) {
+        if UIDevice.isHaveNotch, #available(iOS 11.0, *) {
             saveTop = UIApplication.shared.keyWindow!.safeAreaInsets.top
         }
         
         super.init(frame: CGRect(x: 8, y: saveTop , width: width, height: 10))
         self.config = config
-        self.title.text = title
-        self.message.text = message
+        self.title.attributedText = title
+        self.message.attributedText = message
         self.status = status
         self.duration = duration
         self.position = position
@@ -157,16 +157,18 @@ public class AJMessage: UIView {
     }
     
     func updateFrame(){
-        let sizeT = title.sizeThatFits(CGSize(width: mainView.bounds.width - 62, height: CGFloat.greatestFiniteMagnitude))
+        let maxSize = CGSize(width: mainView.bounds.width - 62, height: CGFloat.greatestFiniteMagnitude)
+        
+        let sizeT = title.attributedText?.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin,.usesFontLeading], context: nil).size ?? .zero
         title.frame.size.height = sizeT.height
-        let sizeM = message.sizeThatFits(CGSize(width: mainView.bounds.width - 62, height: CGFloat.greatestFiniteMagnitude))
+        let sizeM = message.attributedText?.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin,.usesFontLeading], context: nil).size ?? .zero
         message.frame.origin.y = title.frame.maxY + 4
         message.frame.size.height = sizeM.height
         self.frame.size.height = message.frame.maxY + 16
         
         if position == .bottom {
             var saveBottom : CGFloat = 16
-            if UIDevice.isIphoneX, #available(iOS 11.0, *) {
+            if UIDevice.isHaveNotch, #available(iOS 11.0, *) {
                 saveBottom = UIApplication.shared.keyWindow!.safeAreaInsets.bottom
             }
             self.frame.origin.y = UIApplication.shared.keyWindow!.bounds.height - saveBottom - self.frame.size.height
@@ -228,7 +230,25 @@ public class AJMessage: UIView {
     ///   - config: Optional config, default is using AJMessageConfig.shared
     /// - Returns: AJMessage for chaining function like onhide
     @discardableResult public static func show(title : String,message : String,duration: Double? = 3.0 , position: Position = .top,status : Status = .success ,config:AJMessageConfig = AJMessageConfig.shared) -> AJMessage {
-        let msg = AJMessage(title: title, message: message, duration: duration, position: position, status: status, config:config)
+        let attrTitle = NSAttributedString(string: title, attributes: [.font:config.titleFont,.foregroundColor:config.titleColor])
+        
+        let attrMessage = NSAttributedString(string: message, attributes: [.font:config.messageFont,.foregroundColor:config.messageColor])
+        
+        let msg = AJMessage(title: attrTitle, message: attrMessage, duration: duration, position: position, status: status, config:config)
+        return msg
+    }
+    
+    /// show AJMessage Nb:duration = nil to infinite, default is 3
+    ///
+    /// - Parameters:
+    ///   - title: NSAttributedString of title
+    ///   - message: NSAttributedString of message
+    ///   - duration: Optional duration, default value is 3.0
+    ///   - position: Optional Position, default value is .top
+    ///   - status: Optional status, default value is .success
+    /// - Returns: AJMessage for chaining function like onhide
+    @discardableResult public static func show(title : NSAttributedString,message : NSAttributedString,duration: Double? = 3.0 , position: Position = .top,status : Status = .success) -> AJMessage {
+        let msg = AJMessage(title: title, message: message, duration: duration, position: position, status: status, config:AJMessageConfig.shared)
         return msg
     }
     
