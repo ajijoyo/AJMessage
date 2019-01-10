@@ -35,6 +35,20 @@ AJMessage.show(title: "This is title", message: "message for description",positi
 print("did dissmiss")
 }
 ```
+Can use NSAttributeString
+```swift
+let title = NSAttributedString(string: "Title", attributes: [.font:UIFont.systemFont(ofSize: 15)])
+let msg = NSMutableAttributedString(string: "aasdasd", attributes: [.font:UIFont.systemFont(ofSize: 14)])
+let attach = NSTextAttachment()
+attach.image = UIImage(named:"plus")
+msg.append(NSAttributedString(attachment: attach))
+msg.append(NSAttributedString(string: "asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasd"))
+        
+AJMessage.show(title: title, message: msg,position:.top).onHide {
+print("did dissmiss")
+}
+```
+
 
 customize config
 
