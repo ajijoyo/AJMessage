@@ -29,7 +29,7 @@ pod 'AJMessage'
 ```
 
 
-##Changelog
+## Changelog
 
 - separated function show with initial view :
 
