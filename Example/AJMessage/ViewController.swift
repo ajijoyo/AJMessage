@@ -26,7 +26,12 @@ class ViewController: UIViewController {
         msg.append(NSAttributedString(attachment: attach))
         msg.append(NSAttributedString(string: "asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasd"))
         
-        AJMessage.show(title: title, message: msg)
+        AJMessage(title: title, message: msg)
+            .show()
+            .onDismiss { (message) in
+                
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,4 +40,3 @@ class ViewController: UIViewController {
     }
 
 }
-

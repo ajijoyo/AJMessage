@@ -27,6 +27,24 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'AJMessage'
 ```
+
+
+##Changelog
+
+- separated function show with initial view :
+
+```swift
+AJMessage(title: title, message: msg).show()
+
+//or
+let asd = AJMessage(title: title, message: msg)
+asd.show()
+
+```
+- function callback  `onHide` has deprecated and changed to `onDismiss`  and have value `AJMessage` class 
+- add new configuration of backgroundcolor  `setBackgroundColor` for each status
+- add new configuratoin of icon `setImage` for each status
+
 ## Used
 
 Simple used
@@ -49,14 +67,15 @@ print("did dissmiss")
 }
 ```
 
-
 customize config
 
 for spesific view present
 ```swift
-let config = AJMessageConfig()
+var config = AJMessageConfig()
 /**
 config.titleFont 
+config.setBackgroundColor(.cyan, status: .success)
+config.setImage(UIImage(named:"warning"), status: .info)
 */
 
 AJMessage.show(title: "This is title", message: "message for description", config: config)
@@ -65,11 +84,15 @@ AJMessage.show(title: "This is title", message: "message for description", confi
 for global view present
 just set `AJMessageConfig.shared` on `didFinishLaunchingWithOptions` 
 ```swift
-let config = AJMessageConfig.shared
+var config = AJMessageConfig.shared
 /**
 config.titleFont 
+config.setBackgroundColor(.cyan, status: .success)
+config.setImage(UIImage(named:"warning"), status: .info)
 */
 ```
+
+
 
 ## Author
 

@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        AJMessageConfig.shared.setBackgroundColor(.cyan, status: .success)
+        AJMessageConfig.shared.setImage(UIImage(named:"plus"), status: .success)
+        
         return true
     }
 
