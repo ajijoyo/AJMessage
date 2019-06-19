@@ -247,7 +247,7 @@ public class AJMessage: UIView {
         }
     }
     
-    @available(*,deprecated: 1.1.0,message: "change to onDismiss")
+    @available(swift,deprecated: 1.1.0,message: "change to onDismiss")
     public func onHide(_ sender : @escaping AJcompleteHandler){
         action = sender
     }
