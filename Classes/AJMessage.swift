@@ -9,7 +9,7 @@
 import UIKit
 
 public class AJMessage: UIView {
-
+    
     
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -24,7 +24,7 @@ public class AJMessage: UIView {
         mainShape.shadowRadius = 15
         mainShape.shadowOpacity = 0.4
     }
- 
+    
     public enum Status : CaseIterable {
         case error
         case info
@@ -79,9 +79,9 @@ public class AJMessage: UIView {
                             status : Status = .success,
                             config:AJMessageConfig = AJMessageConfig.shared) {
         
-            let attrTitle = NSAttributedString(string: title, attributes: [.font:config.titleFont,.foregroundColor:config.titleColor])
-            
-            let attrMessage = NSAttributedString(string: message, attributes: [.font:config.messageFont,.foregroundColor:config.messageColor])
+        let attrTitle = NSAttributedString(string: title, attributes: [.font:config.titleFont,.foregroundColor:config.titleColor])
+        
+        let attrMessage = NSAttributedString(string: message, attributes: [.font:config.messageFont,.foregroundColor:config.messageColor])
         self.init(title: attrTitle, message: attrMessage, duration: duration, position: position, status: status, config: config)
     }
     
@@ -119,7 +119,7 @@ public class AJMessage: UIView {
             iconView.topAnchor.constraint(equalTo: mainView.topAnchor),
             iconView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor),
             ])
-
+        
         title.numberOfLines = 0
         title.font = config.titleFont
         title.textColor = config.titleColor
@@ -128,11 +128,11 @@ public class AJMessage: UIView {
         title.setContentHuggingPriority(.required, for: .vertical)
         mainView.addSubview(title)
         NSLayoutConstraint.activate([
-        title.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 16),
-        title.leftAnchor.constraint(equalTo: iconView.rightAnchor, constant: 16),
-        title.rightAnchor.constraint(equalTo: mainView.rightAnchor, constant: -16),
+            title.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 16),
+            title.leftAnchor.constraint(equalTo: iconView.rightAnchor, constant: 16),
+            title.rightAnchor.constraint(equalTo: mainView.rightAnchor, constant: -16),
             ])
-
+        
         message.numberOfLines = 0
         message.font = config.messageFont
         message.textColor = config.messageColor
@@ -145,17 +145,17 @@ public class AJMessage: UIView {
             message.rightAnchor.constraint(equalTo: title.rightAnchor, constant: 0),
             message.bottomAnchor.constraint(equalTo: message.superview!.bottomAnchor, constant: -16),
             ])
-
+        
         mainShape.fillColor = config.backgrounColors[status]?.cgColor
         iconView.image = config.images[status]
-
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.hideMessages))
         isUserInteractionEnabled = true
         addGestureRecognizer(tap)
-
+        
         let pan = UIPanGestureRecognizer(target: self, action: #selector(self.onMoving(pan:)))
         addGestureRecognizer(pan)
-
+        
         if let duration = duration {
             timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(self.hideMessages), userInfo: nil, repeats: false)
         }
@@ -214,17 +214,16 @@ public class AJMessage: UIView {
             , animations: {
                 self.alpha = 0
                 self.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-            }) { (B) in
-                self.removeFromSuperview()
-                self.action?(self)
+        }) { (B) in
+            self.removeFromSuperview()
+            self.action?(self)
         }
         
     }
     
     @objc func onMoving(pan: UIPanGestureRecognizer){
-//        let velo = pan.velocity(in: UIApplication.shared.keyWindow!)
+        //        let velo = pan.velocity(in: UIApplication.shared.keyWindow!)
         let point = pan.translation(in: UIApplication.shared.keyWindow!)
-        print(point)
         if pan.state == .began {
             timer?.invalidate()
         }else if pan.state == .changed {

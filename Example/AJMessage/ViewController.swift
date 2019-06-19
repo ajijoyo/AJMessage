@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         msg.append(NSAttributedString(attachment: attach))
         msg.append(NSAttributedString(string: "asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasd"))
         
-        AJMessage(title: title, message: msg,position: .bottom)
+        AJMessage(title: title, message: msg,position: .top)
             .show()
             .onDismiss { (message) in
                 
