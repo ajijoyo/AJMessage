@@ -72,6 +72,7 @@ customize config
 for spesific view present
 ```swift
 var config = AJMessageConfig()
+
 /**
 config.titleFont 
 config.setBackgroundColor(.cyan, status: .success)
