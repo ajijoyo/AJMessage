@@ -9,12 +9,13 @@ jobs:
     runs-on: macOS-latest
     strategy:
         matrix:
-          destination: ['platform=iOS Simulator,OS=12.2,name=iPhone X', 'platform=tvOS Simulator,OS=12.2,name=Apple TV 4K']
+          destination: ['platform=iOS Simulator,OS=12,name=iPhone X']
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Build and test
         run: |
-          xcodebuild clean test -project AJMessage.xcodeproj -scheme Texstyle -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          cd Example
+          xcodebuild clean test -project AJMessage.xcworkspace -scheme AJMessage-Example -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
