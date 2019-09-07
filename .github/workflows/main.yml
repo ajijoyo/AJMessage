@@ -14,3 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: xcodebuild clean test -project AJMessage.xcodeproj -scheme AJMessage -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+       env: 
+       destination: ${{ matrix.destination }}
