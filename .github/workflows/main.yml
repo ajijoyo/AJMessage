@@ -15,7 +15,6 @@ jobs:
         uses: actions/checkout@master
       - name: Build and test
         run: |
-          cd Texstyle
           xcodebuild clean test -project AJMessage.xcodeproj -scheme Texstyle -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
