@@ -1,18 +1,21 @@
-name: Test name top
-
 on: 
  push:
-    branches:
-    - master
+  branches:
+   - master
+name: Test
 jobs:
-  build:
-    name: Build
+  test:
+    name: Test
     runs-on: macOS-latest
     strategy:
         matrix:
-          destination: ['platform=iOS Simulator,OS=12,name=iPhone X']
+          destination: ['platform=iOS Simulator,OS=12.2,name=iPhone X', 'platform=tvOS Simulator,OS=12.2,name=Apple TV 4K']
     steps:
-    - uses: actions/checkout@master
-    - run: xcodebuild clean test -project AJMessage.xcodeproj -scheme AJMessage -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-       env: 
-       destination: ${{ matrix.destination }}
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Build and test
+        run: |
+          cd Texstyle
+          xcodebuild clean test -project AJMessage.xcodeproj -scheme Texstyle -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env: 
+         destination: ${{ matrix.destination }}
