@@ -16,6 +16,6 @@ jobs:
       - name: Build and test
         run: |
           cd Example
-          xcodebuild clean test -project AJMessage.xcworkspace -scheme AJMessage-Example -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean test -workspace AJMessage.xcworkspace -scheme AJMessage-Example -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
