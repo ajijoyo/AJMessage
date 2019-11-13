@@ -171,7 +171,7 @@ public class AJMessage: UIView {
         }
         
         UIApplication.shared.keyWindow?.addSubview(self)
-        topConstraint = topAnchor.constraint(equalTo: superview!.topAnchor, constant: UIApplication.shared.statusBarFrame.maxY + 8)
+        topConstraint = topAnchor.constraint(equalTo: superview!.topAnchor, constant: UIApplication.shared.statusBarFrame.maxY + 16)
         centerXAnchor.constraint(equalTo: superview!.centerXAnchor, constant: 0).isActive = true
         
         if #available(iOS 11.0, *) {
